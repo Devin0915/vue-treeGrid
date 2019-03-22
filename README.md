@@ -36,13 +36,18 @@ yarn run serve
 | width    | 宽度                             |
 | type     | selection 多选框 / opration 操作 |
 
-* _--oprationTag: 操作列标签 --oprationBtn：操作列按钮（参数：oprations：{val,type,term}）_
-* _使用selection需要传入id_
+* opration: 
+  - oprationTag：操作列标签; 
+  - oprationBtn：操作列按钮（参数：oprations：{val,type,term}）
+* 使用 selection需要传入id
 
 ### Events
 
 | Events               | Return                             |
 | -------------------- | ---------------------------------- |
-| @on-row-click        | return(result, event, index, text) |
-| @on-sort-change      | return(arr)                        |
-| @on-selection-change | return(key,'asc'/'desc')           |
+| @on-row-click        | return (result, event, index, text) |
+| @on-sort-change      | return (arr)                        |
+| @on-selection-change | return (key,'asc'/'desc')           |
+
+## Demo
+![demo.png](src/assets/demo.png)
