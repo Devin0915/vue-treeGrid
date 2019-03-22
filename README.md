@@ -1,29 +1,48 @@
-# vue-treegrid
+# vue-treeGrid
+
+```
+vue + iview
+```
 
 ## Project setup
+
 ```
 yarn install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
 yarn run serve
 ```
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+## Config
 
-### Run your tests
-```
-yarn run test
-```
+### Props
 
-### Lints and fixes files
-```
-yarn run lint
-```
+| Props   | Explain      |
+| ------- | ------------ |
+| items   | 树形展示数据 |
+| columns | 结构配置数据 |
+| align   | 表头偏移     |
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Columns
+
+| Columns  | Explain                          |
+| -------- | -------------------------------- |
+| title    | 表头                             |
+| key      | 渲染字段                         |
+| sortable | 排序                             |
+| width    | 宽度                             |
+| type     | selection 多选框 / opration 操作 |
+
+* _--oprationTag: 操作列标签 --oprationBtn：操作列按钮（参数：oprations：{val,type,term}）_
+* _使用selection需要传入id_
+
+### Events
+
+| Events               | Return                             |
+| -------------------- | ---------------------------------- |
+| @on-row-click        | return(result, event, index, text) |
+| @on-sort-change      | return(arr)                        |
+| @on-selection-change | return(key,'asc'/'desc')           |
