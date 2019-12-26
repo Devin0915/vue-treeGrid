@@ -1,8 +1,6 @@
 # vue-treeGrid
 
-```
-vue + iview
-```
+  树表格控件，基于 **vue** 和 **iview** 进行构建，满足业务设计上的定制化。（iview官方只提供了树形控件）
 
 ## Project setup
 
